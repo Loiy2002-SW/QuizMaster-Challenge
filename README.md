@@ -1,5 +1,6 @@
 # Quiz Console Application
 
+
 ![Quiz image](quiz_img.PNG)
 
 
@@ -18,3 +19,4 @@ This console application allows users to take a quiz on .NET and C# programming 
 - Each question has a time limit of 10 seconds for the user to provide an answer.
 - Correct and incorrect answers are indicated during the quiz.
 - The final score is displayed at the end of the quiz.
+
