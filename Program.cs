@@ -6,6 +6,9 @@ namespace QuizMaster_Challenge
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Welcome to the Quiz Console App!\r\n\r\nTest your .NET & C# knowledge with 10 questions.\r\n\r\nLet's begin!\r\n\r\n");
+            Console.ResetColor();
             try
             {
                 StartQuiz();
@@ -30,7 +33,7 @@ namespace QuizMaster_Challenge
             }
             finally
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("Quiz ended, Thank you for your time :)");
                 Console.ResetColor();
             }
