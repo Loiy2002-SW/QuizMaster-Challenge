@@ -1,6 +1,6 @@
 # Quiz Console Application
 
-![Quiz image](quiz_img.png)
+![Quiz image](quiz_img.PNG)
 
 
 ## Purpose of the Program
