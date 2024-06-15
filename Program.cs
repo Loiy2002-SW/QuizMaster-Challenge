@@ -1,6 +1,4 @@
-﻿using static System.Formats.Asn1.AsnWriter;
-
-namespace QuizMaster_Challenge
+﻿namespace QuizMaster_Challenge
 {
     internal class Program
     {
@@ -9,6 +7,7 @@ namespace QuizMaster_Challenge
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Welcome to the Quiz Console App!\r\n\r\nTest your .NET & C# knowledge with 10 questions.\r\n\r\nLet's begin!\r\n\r\n");
             Console.ResetColor();
+
             try
             {
                 StartQuiz();
@@ -58,8 +57,8 @@ namespace QuizMaster_Challenge
             "What does the 'async' keyword indicate in C#?|The method is synchronous|The method is asynchronous|The method is a static method|The method is a constructor|1"
               };
 
+
             int userScore = 0;
-            int timeLimitSeconds = 10; // this is 10 seconds for each question.
 
             // Loop through each question
             foreach (var qa in questionsAndAnswers)
