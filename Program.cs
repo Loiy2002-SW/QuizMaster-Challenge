@@ -33,21 +33,29 @@ namespace QuizMaster_Challenge
         static void DisplayWelcomeMessage()
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("Welcome to the Quiz Console App!\r\n\r\nTest your .NET & C# knowledge with 10 questions.\r\n\r\nLet's begin!\r\n\r\n");
+            Console.WriteLine(new string('=', 50));
+            Console.WriteLine(" Welcome to the Quiz Console App! ");
+            Console.WriteLine(" Test your .NET & C# knowledge with 15 questions.");
+            Console.WriteLine(" Let's begin!");
+            Console.WriteLine(new string('=', 50));
             Console.ResetColor();
         }
 
         static void DisplayErrorMessage(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(new string('-', 50));
             Console.WriteLine(message);
+            Console.WriteLine(new string('-', 50));
             Console.ResetColor();
         }
 
         static void DisplayGoodbyeMessage()
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("Quiz ended, Thank you for your time :)");
+            Console.WriteLine(new string('=', 50));
+            Console.WriteLine(" Quiz ended, thank you for your time :) ");
+            Console.WriteLine(new string('=', 50));
             Console.ResetColor();
         }
 
@@ -86,8 +94,10 @@ namespace QuizMaster_Challenge
                 bool validInput = false;
                 while (!validInput)
                 {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write("Enter the number of your answer: ");
                     string userInput = Console.ReadLine();
+                    Console.ResetColor();
 
                     if (int.TryParse(userInput, out int userAnswerIndex) && userAnswerIndex >= 1 && userAnswerIndex <= answers.Count)
                     {
@@ -114,12 +124,19 @@ namespace QuizMaster_Challenge
 
         static void DisplayQuestion(string question, List<string> answers)
         {
+            Console.WriteLine(new string('-', 50));
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(question);
             Console.WriteLine();
+            Console.ResetColor();
+
             for (int i = 0; i < answers.Count; i++)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"{i + 1}. {answers[i]}");
+                Console.ResetColor();
             }
+            Console.WriteLine(new string('-', 50));
         }
 
         static void DisplayCorrectAnswerMessage()
@@ -148,7 +165,9 @@ namespace QuizMaster_Challenge
         static void DisplayFinalScore(int userScore, int totalQuestions)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(new string('=', 50));
             Console.WriteLine($"Your final score is: {userScore}/{totalQuestions}");
+            Console.WriteLine(new string('=', 50));
             Console.ResetColor();
             Console.WriteLine("Press [Enter] to exit...");
             Console.ReadLine();
