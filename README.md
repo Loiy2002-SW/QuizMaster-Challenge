@@ -1,6 +1,6 @@
 # Quiz Console Application
 
-![Quiz image](quiz_img.PNG)
+![Quiz image](output.PNG)
 
 
 ---
