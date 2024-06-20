@@ -25,3 +25,27 @@ This console application allows users to take a quiz on .NET and C# programming 
 - Correct and incorrect answers are indicated during the quiz.
 - The final score is displayed at the end of the quiz.
 
+---
+
+## Example output:
+
+```
+==================================================
+ Welcome to the Quiz Console App! 
+ Test your .NET & C# knowledge with 15 questions.
+ Let's begin!
+==================================================
+--------------------------------------------------
+What does .NET stand for?
+1. Network Enabled Technology
+2. New Enhanced Technology
+3. No Extra Time
+4. .NET does not stand for anything specific
+--------------------------------------------------
+Enter the number of your answer: 4
+Correct!
+
+==================================================
+Your final score is: 12/15
+==================================================
+Press [Enter] to exit...
